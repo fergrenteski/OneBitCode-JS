@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulário de Cadastro</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .form-container {
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Cadastro de Usuário</h1>
+
+    <form action="/cadastro" method="post">
+      <input type="text" name="nome" placeholder="Nome completo">
+      <input type="email" name="email" placeholder="E-mail">
+      <input type="password" name="senha" placeholder="Senha">
+      <input type="password" name="confirmar_senha" placeholder="Confirmar senha">
+      
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+</body>
+</html>
