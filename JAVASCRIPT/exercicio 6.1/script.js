@@ -1,9 +1,17 @@
 let palavra = prompt("Digite uma palavra:")
 
-for(i = 0; i < palavra.length; i++){
-    for(j = palavra.length; j > 0; j--) {
-        if(palavra[i] !== palavra[j]) {
-           
-        }
+let palavraInvertida = ""
+
+for(let i = palavra.length - 1; i >=0; i--){
+    palavraInvertida += palavra[i]
     }
-} alert("é um Palíndromo")
+
+if (palavra === palavraInvertida) {
+    alert("é um palíndromo \n" +
+    palavra + "\n" +
+    palavraInvertida)
+} else {
+    alert("Não é um palíndromo \n" +
+    palavra + "\n" +
+    palavraInvertida)
+}
