@@ -44,7 +44,7 @@ console.log(hobbits)
 console.log(outros)
 
 // splice: Permite remover elementos em qualquer posição do array e substituir por novos
-const elementosRemovidos = sociedade.splice(indice, 1, "Gandalf, o Cinzento")
+const elementosRemovidos = sociedade.splice(2, 1, "LUIZ FERNANDO")
 console.log(elementosRemovidos)
 console.log(sociedade)
 
